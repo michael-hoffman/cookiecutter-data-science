@@ -3,13 +3,14 @@ import pytest
 import shutil
 from pathlib import Path
 from cookiecutter import main
+import os
 
 CCDS_ROOT = Path(__file__).parents[1].resolve()
 
 args = {
-        'project_name': 'DrivenData',
-        'author_name': 'DrivenData',
-        'open_source_license': 'BSD-3-Clause',
+        'project_name': 'project',
+        'author_name': os.getuid(),
+        'open_source_license': '',
         'python_interpreter': 'python'
         }
 
